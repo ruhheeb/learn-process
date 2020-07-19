@@ -401,8 +401,7 @@ template {
 }
 
 .navbar {
-  padding-top: 19px;
-  padding-bottom: 21px;
+  padding: 19px 0;
   background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover;
