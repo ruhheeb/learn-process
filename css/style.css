@@ -400,14 +400,28 @@ template {
   display: none;
 }
 
-.navbar {
-  padding: 19px 0;
-  background-color: #000000;
+.header {
+  position: relative;
+  padding: 20px 0;
+  background-image: url(../img/header/header-bg.jpg);
   background-repeat: no-repeat;
+  background-position: top;
   background-size: cover;
 }
 
-.navbar-top {
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.80;
+}
+
+.navbar {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,14 +433,16 @@ template {
           justify-content: space-between;
 }
 
-.navbar-top__info {
+.navbar__info {
   margin-right: auto;
   margin-left: 16px;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .logo {
   width: 95px;
-  height: 45px;
+  height: 48px;
 }
 
 .info {
@@ -440,11 +456,6 @@ template {
   color: #ffffff;
 }
 
-.info-text {
-  font-weight: 500;
-  font-size: 20px;
-}
-
 .call {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -453,21 +464,40 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-weight: 700;
+}
+
+.call__number {
+  margin-bottom: 10px;
+  font-size: 25px;
   color: #ffffff;
 }
 
-.call-number {
-  margin-bottom: 9px;
-  font-weight: 700;
-  font-size: 25px;
-}
-
-.call-link {
+.call__link {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  font-weight: 500;
   font-size: 20px;
   text-decoration: none;
   color: #94ca2d;
+}
+
+.glasses {
+  position: relative;
+  padding: 112px 0 21px 0;
+  background-image: url(../img/glasses/glasses-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.glasses::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.6;
 }
 /*# sourceMappingURL=style.css.map */
